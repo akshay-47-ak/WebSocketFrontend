@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>WebSocket Frontend</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/stompjs@2/dist/stomp.min.js"></script>
+
+</head>
+
+<body>
+
+<h2>Chat App</h2>
+
+<input id="username" placeholder="username">
+
+<button onclick="connect()">Connect</button>
+
+<br><br>
+
+<input id="message" placeholder="message">
+
+<button onclick="sendPublic()">Send All</button>
+
+<br><br>
+
+<input id="receiver" placeholder="receiver">
+
+<button onclick="sendPrivate()">Send Private</button>
+
+<div id="chat"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
