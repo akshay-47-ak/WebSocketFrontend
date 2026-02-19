@@ -7,7 +7,9 @@ function connect(){
 
 username = document.getElementById("username").value;
 
-var socket = new SockJS('http://localhost:8080/ws');
+var socket = new SockJS(
+'http://localhost:8080/ws?username=' + username
+);
 
 stompClient = Stomp.over(socket);
 
